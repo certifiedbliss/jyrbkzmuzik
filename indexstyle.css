@@ -1,6 +1,6 @@
 body {
     background-image: url('/IMG_2153.jpeg');
-    background-size: contain;
+    background-size: cover;
 }
 h1 {
             margin-top: 150px;
