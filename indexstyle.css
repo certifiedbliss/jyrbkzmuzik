@@ -17,6 +17,11 @@ h1 {
         0 0 55px yellow,
         0 0 70px yellow;
 }
+h3 {
+    color: white;
+    text-shadow: 0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 20px cyan,
 p {
     color: red;
 }
