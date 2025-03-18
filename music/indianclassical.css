@@ -16,6 +16,9 @@ h1 {
         0 0 55px yellow,
         0 0 70px yellow;
 }
+h2 {
+    color: cyan;
+}
 h3 {
     color: cyan;
 }
@@ -36,4 +39,7 @@ p5 {
 }
 p6 {
     color: purple;
+}
+a {
+    color: yellow;
 }
