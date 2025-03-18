@@ -21,7 +21,7 @@ h2 {
     text-shadow: 0 0 5px #fff,
         0 0 10px #1eff6c,
         0 0 20px #1eff6c,
-        0 0 30px #1eff6c,
+        0 0 30px #1eff6c;
 }
 h3 {
     color: cyan;
@@ -45,5 +45,5 @@ p6 {
     color: purple;
 }
 a {
-    color: yellow;
+    color: red;
 }
