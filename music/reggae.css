@@ -4,19 +4,6 @@ body {
     margin: 30px;
 }
 h1 {
-    text-align: center;
-    margin-top: 50px;
-    font-size: 60px;
-    color: #ffffff;
-    text-shadow: 0 0 5px #fff,
-        0 0 10px #fff,
-        0 0 20px yellow,
-        0 0 30px yellow,
-        0 0 40px yellow,
-        0 0 55px yellow,
-        0 0 70px yellow;
-}
-h2 {
     color: white;
     text-shadow: 0 0 5px #fff,
         0 0 10px #1eff6c,
