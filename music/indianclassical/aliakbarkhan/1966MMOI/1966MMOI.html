@@ -1,30 +1,60 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="/music/indianclassical/aliakbarkhan/1966MMOI/1966MMOI.css">
-    </head>
-    <body>
-            <h1>[1966] Master Musician Of India</h1>
-        <hr>
-            <h3>tracklist:</h3>
-        <p3>
-            <a href="/music/indianclassical/aliakbarkhan/1966MMOI/01RagaChandranandan.mp3" download>01 Raga Chandranandan - Vilambit, Madhya, & Drut Gats in Teentaal</a><br>
-            <a href="/music/indianclassical/aliakbarkhan/1966MMOI/02RagaGauriManjari.mp3" download>02 Raga Gauri Manjari - Alap, Jor, & Jhala</a><br>
-        </p3>
-        <hr>
-            <audio controls src="/music/indianclassical/aliakbarkhan/1966MMOI/01RagaChandranandan.mp3"></audio><br>
-            <audio controls src="/music/indianclassical/aliakbarkhan/1966MMOI/02RagaGauriManjari.mp3"></audio><br>
-        <hr>
-            <h3>personnel:</h3>
-        <p3>
-            Ali Akbar Khan - sarod<br>
-            Mahapurush Misra - tabla<br>
-            Anila Sinha - tanpura<br>
-        </p3>
-        <hr>
-            <h3>info/notes</h3>
-        <p3>
-            recorded November 9th, 1962 at the General Theological Seminary, New York City, New York, USA
-        </p3>
-    </body>
+<head>
+    <link rel="stylesheet" href="/music/indianclassical/aliakbarkhan/1966MMOI/1966MMOI.css">
+</head>
+<body>
+    <h1>[1966] Master Musician Of India</h1>
+    <hr>
+
+    <h3>tracklist:</h3>
+    <div>
+        <a href="/music/indianclassical/aliakbarkhan/1966MMOI/01RagaChandranandan.mp3" download>
+            01 Raga Chandranandan - Vilambit, Madhya, & Drut Gats in Teentaal
+        </a><br>
+        <a href="/music/indianclassical/aliakbarkhan/1966MMOI/02RagaGauriManjari.mp3" download>
+            02 Raga Gauri Manjari - Alap, Jor, & Jhala
+        </a><br>
+    </div>
+
+    <hr>
+
+    <!-- Audio Players -->
+    <audio id="track1" controls>
+        <source src="/music/indianclassical/aliakbarkhan/1966MMOI/01RagaChandranandan.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio><br>
+
+    <audio id="track2" controls>
+        <source src="/music/indianclassical/aliakbarkhan/1966MMOI/02RagaGauriManjari.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio><br>
+
+    <hr>
+
+    <h3>personnel:</h3>
+    <div>
+        Ali Akbar Khan - sarod<br>
+        Mahapurush Misra - tabla<br>
+        Anila Sinha - tanpura<br>
+    </div>
+
+    <hr>
+
+    <h3>info/notes</h3>
+    <div>
+        recorded November 9th, 1962 at the General Theological Seminary, New York City, New York, USA
+    </div>
+
+    <!-- JavaScript for Auto-Play -->
+    <script>
+        const track1 = document.getElementById('track1');
+        const track2 = document.getElementById('track2');
+
+        // Play next track when the first ends
+        track1.addEventListener('ended', function() {
+            track2.play();
+        });
+    </script>
+</body>
 </html>
