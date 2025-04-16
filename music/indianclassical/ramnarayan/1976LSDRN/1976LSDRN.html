@@ -1,1 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/css/album.css">
+</head>
+<body>
+    <h1>[1976] Le Sarangi de Ram Narayan</h1>
+    <hr>
 
+    <h3>tracklist:</h3>
+    <p3>
+        <a href="/music/indianclassical/ramnarayan/1976LSDRN/01RagaPuriyaKalyan.mp3" download>
+            01 Raga Puriya Kalyan - Alap, Jor, & Jhala
+        </a><br>
+        <a href="/music/indianclassical/ramnarayan/1976LSDRN/02RagaPuriyaKalyan.mp3" download>
+            02 Raga Puriya Kalyan - Vilambit & Drut Gats in Teentaal
+        </a><br>
+    </p3>
+
+    <hr>
+
+    <!-- Audio Players -->
+    <audio id="track1" controls>
+        <source src="/music/indianclassical/ramnarayan/1976LSDRN/01RagaPuriyaKalyan.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio><br>
+
+    <audio id="track2" controls>
+        <source src="/music/indianclassical/ramnarayan/1976LSDRN/02RagaPuriyaKalyan.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio><br>
+
+    <hr>
+
+    <h3>personnel:</h3>
+    <p3>
+        Ram Narayan - sarangi<br>
+        Suresh Talwalkar - tabla<br>
+        Hans Isgren - tanpura<br>
+    </p3>
+
+    <hr>
+
+    <h3>info/notes</h3>
+    <p3>
+        recorded November 23, 1974 in Stockholm, Swede
+    </p3>
+
+    <!-- JavaScript for Auto-Play -->
+    <script>
+        const track1 = document.getElementById('track1');
+        const track2 = document.getElementById('track2');
+
+        // Play next track when the first ends
+        track1.addEventListener('ended', function() {
+            track2.play();
+        });
+    </script>
+</body>
+</html>
