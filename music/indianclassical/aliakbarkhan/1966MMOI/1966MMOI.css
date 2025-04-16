@@ -6,9 +6,9 @@ body {
 h1 {
     color: white;
     text-shadow: 0 0 5px #fff,
-        0 0 10px #ff3f3f,
-        0 0 20px #ff3f3f,
-        0 0 30px #ff3f3f;
+        0 0 10px #ffa500,
+        0 0 20px #ffa500,
+        0 0 30px #ffa500;
 }
 h3 {
     color: red;
