@@ -1,1 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/css/album.css">
+</head>
+<body>
+    <h1>[1973] Head Hunters</h1>
+    <hr>
 
+    <h3>tracklist:</h3>
+    <p3>
+        <a href="/music/jazz/herbiehancock/1973HH/01Chameleon.mp3" download>
+            01 Chameleon
+        </a><br>
+        <a href="/music/jazz/herbiehancock/1973HH/02WatermelonMan.mp3" download>
+            02 Watermelon Man
+        </a><br>
+        <a href="/music/jazz/herbiehancock/1973HH/03DetourAhead.mp3" download>
+            03 Detour Ahead
+        </a><br>
+        <a href="/music/jazz/billevans/1962WFD/04MyRomance.mp3" download>
+            04 My Romance
+        </a><br>
+        <a href="/music/jazz/billevans/1962WFD/05SomeOtherTime.mp3" download>
+            05 Some Other Time
+        </a><br>
+        <a href="/music/jazz/billevans/1962WFD/06Milestones.mp3" download>
+            06 Milestones
+        </a><br>
+    </p3>
+
+    <hr>
+
+    <!-- Audio Players -->
+    <audio id="track1" controls>
+        <source src="/music/jazz/billevans/1962WFD/01MyFoolishHeart.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio><br>
+
+    <audio id="track2" controls>
+        <source src="/music/jazz/billevans/1962WFD/02WaltzForDebby.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio><br>
+
+    <audio id="track3" controls>
+        <source src="/music/jazz/billevans/1962WFD/03DetourAhead.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio><br>
+
+    <audio id="track4" controls>
+        <source src="/music/jazz/billevans/1962WFD/04MyRomance.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio><br>
+
+    <audio id="track5" controls>
+        <source src="/music/jazz/billevans/1962WFD/05SomeOtherTime.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio><br>
+
+    <audio id="track6" controls>
+        <source src="/music/jazz/billevans/1962WFD/06Milestones.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio><br>
+  
+    <hr>
+
+    <h3>personnel:</h3>
+    <p3>
+        Bill Evans - piano<br>
+        Scott LaFaro - bass<br>
+        Paul Motian - drums<br>
+    </p3>
+
+    <hr>
+
+    <h3>info:</h3>
+    <p3>
+        recorded June 25, 1961 at the Village Vanguard, New York City, New York, USA
+    </p3>
+
+    <hr>
+
+    <!-- JavaScript for Auto-Play -->
+    <script>
+        const track1 = document.getElementById('track1');
+        const track2 = document.getElementById('track2');
+        const track3 = document.getElementById('track3');
+        const track4 = document.getElementById('track4');
+        const track5 = document.getElementById('track5');
+        const track6 = document.getElementById('track6');
+
+        track1.addEventListener('ended', () => track2.play());
+        track2.addEventListener('ended', () => track3.play());
+        track3.addEventListener('ended', () => track4.play());
+        track4.addEventListener('ended', () => track5.play());
+        track5.addEventListener('ended', () => track6.play());
+    </script>
+
+</body>
+</html>
