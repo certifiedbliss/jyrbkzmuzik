@@ -15,17 +15,11 @@
         <a href="/music/jazz/herbiehancock/1973HH/02WatermelonMan.mp3" download>
             02 Watermelon Man
         </a><br>
-        <a href="/music/jazz/herbiehancock/1973HH/03DetourAhead.mp3" download>
-            03 Detour Ahead
+        <a href="/music/jazz/herbiehancock/1973HH/03Sly.mp3" download>
+            03 Sly
         </a><br>
-        <a href="/music/jazz/billevans/1962WFD/04MyRomance.mp3" download>
-            04 My Romance
-        </a><br>
-        <a href="/music/jazz/billevans/1962WFD/05SomeOtherTime.mp3" download>
-            05 Some Other Time
-        </a><br>
-        <a href="/music/jazz/billevans/1962WFD/06Milestones.mp3" download>
-            06 Milestones
+        <a href="/music/jazz/herbiehancock/1973HH/04VeinMelter.mp3" download>
+            04 Vein Melter
         </a><br>
     </p3>
 
@@ -33,42 +27,34 @@
 
     <!-- Audio Players -->
     <audio id="track1" controls>
-        <source src="/music/jazz/billevans/1962WFD/01MyFoolishHeart.mp3" type="audio/mpeg">
+        <source src="/music/jazz/herbiehancock/1973HH/01Chameleo.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio><br>
 
     <audio id="track2" controls>
-        <source src="/music/jazz/billevans/1962WFD/02WaltzForDebby.mp3" type="audio/mpeg">
+        <source src="/music/jazz/herbiehancock/1973HH/02WatermelonMan.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio><br>
 
     <audio id="track3" controls>
-        <source src="/music/jazz/billevans/1962WFD/03DetourAhead.mp3" type="audio/mpeg">
+        <source src="/music/jazz/herbiehancock/1973HH/03Sly.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio><br>
 
     <audio id="track4" controls>
-        <source src="/music/jazz/billevans/1962WFD/04MyRomance.mp3" type="audio/mpeg">
+        <source src="/music/jazz/herbiehancock/1973HH/04VeinMelter.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio><br>
 
-    <audio id="track5" controls>
-        <source src="/music/jazz/billevans/1962WFD/05SomeOtherTime.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio><br>
-
-    <audio id="track6" controls>
-        <source src="/music/jazz/billevans/1962WFD/06Milestones.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio><br>
-  
     <hr>
 
     <h3>personnel:</h3>
     <p3>
-        Bill Evans - piano<br>
-        Scott LaFaro - bass<br>
-        Paul Motian - drums<br>
+        Herbie Hancock - keyboards<br>
+        Bennie Maupin - reeds<br>
+        Paul Jackson - bass<br>
+        Harvey Mason - drums<br>
+        Bill Summers - percussion<br>
     </p3>
 
     <hr>
@@ -86,15 +72,10 @@
         const track2 = document.getElementById('track2');
         const track3 = document.getElementById('track3');
         const track4 = document.getElementById('track4');
-        const track5 = document.getElementById('track5');
-        const track6 = document.getElementById('track6');
 
         track1.addEventListener('ended', () => track2.play());
         track2.addEventListener('ended', () => track3.play());
         track3.addEventListener('ended', () => track4.play());
-        track4.addEventListener('ended', () => track5.play());
-        track5.addEventListener('ended', () => track6.play());
-    </script>
 
 </body>
 </html>
