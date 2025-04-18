@@ -1,1 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/css/album.css">
+</head>
+<body>
+    <h1>[1958] Relaxin' With The Miles Davis Quintet</h1>
+    <hr>
 
+    <h3>tracklist:</h3>
+    <p3>
+        <a href="/music/jazz/milesdavis/1958RWTMDQ/01IfIWereABell.mp3" download>
+            01 If I Were A Bell
+        </a><br>
+        <a href="/music/jazz/milesdavis/1958RWTMDQ/02You'reMyEverything.mp3" download>
+            02 You're My Everything
+        </a><br>
+        <a href="/music/jazz/milesdavis/1958RWTMDQ/03ICouldWriteABook.mp3" download>
+            03 I Could Write A Book
+        </a><br>
+        <a href="/music/jazz/milesdavis/1958RWTMDQ/04Oleo.mp3" download>
+            04 Oleo
+        </a><br>
+        <a href="/music/jazz/milesdavis/1958RWTMDQ/05ItCouldHappenToYou.mp3" download>
+            05 It Could Happen To You
+        </a><br>
+        <a href="/music/jazz/milesdavis/1958RWTMDQ/06WoodynYou.mp3" download>
+            06 Woody n' You
+        </a><br>
+    </p3>
+
+    <hr>
+
+    <!-- Audio Players -->
+    <audio id="track1" controls>
+        <source src="/music/jazz/milesdavis/1958RWTMDQ/01IfIWereABell.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio><br>
+
+    <audio id="track2" controls>
+        <source src="/music/jazz/milesdavis/1958RWTMDQ/02You'reMyEverything.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio><br>
+
+    <audio id="track3" controls>
+        <source src="/music/jazz/milesdavis/1958RWTMDQ/03ICouldWriteABook.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio><br>
+
+    <audio id="track4" controls>
+        <source src="/music/jazz/milesdavis/1958RWTMDQ/04Oleo.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio><br>
+
+    <audio id="track5" controls>
+        <source src="/music/jazz/milesdavis/1958RWTMDQ/05ItCouldHappenToYou.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio><br>
+
+    <audio id="track6" controls>
+        <source src="/music/jazz/milesdavis/1958RWTMDQ/06WoodynYou.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio><br>
+
+    <hr>
+
+    <h3>personnel:</h3>
+    <p3>
+        Miles Davis - trumpet<br>
+        John Coltrane - saxophone<br>
+        Red Garland - piano<br>
+        Paul Chambers - bass<br>
+        Philly Joe Jones - drums<br>
+    </p3>
+
+    <hr>
+
+    <h3>info:</h3>
+    <p3>
+        recorded 11 May and 26 October 1956 at Van Gelder Studio, Hackensack, New Jersey, USA
+    </p3>
+
+    <hr>
+
+    <!-- JavaScript for Auto-Play -->
+    <script>
+        const track1 = document.getElementById('track1');
+        const track2 = document.getElementById('track2');
+        const track3 = document.getElementById('track3');
+        const track4 = document.getElementById('track4');
+        const track5 = document.getElementById('track5');
+        const track6 = document.getElementById('track6');
+
+        track1.addEventListener('ended', () => track2.play());
+        track2.addEventListener('ended', () => track3.play());
+        track3.addEventListener('ended', () => track4.play());
+        track4.addEventListener('ended', () => track5.play());
+        track5.addEventListener('ended', () => track6.play());
+
+</body>
+</html>
