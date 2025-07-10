@@ -1,1 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/css/album.css">
+</head>
+<body>
+    <h1>[1966] Subbulakshmi (The UN Concert)</h1>
+    <hr>
+
+    <h3>tracklist:</h3>
+    <p3>
+        <a href="/music/jazz/milesdavis/1967MS/01Orbits.mp3" download>
+            01 Orbits
+        </a><br>
+        <a href="/music/jazz/milesdavis/1967MS/02Circle.mp3" download>
+            02 Circle
+        </a><br>
+        <a href="/music/jazz/milesdavis/1967MS/03Footprints.mp3" download>
+            03 Footprints
+        </a><br>
+        <a href="/music/jazz/milesdavis/1967MS/04Dolores.mp3" download>
+            04 Dolores
+        </a><br>
+        <a href="/music/jazz/milesdavis/1967MS/05FreedomJazzDance.mp3" download>
+            05 Freedom Jazz Dance
+        </a><br>
+        <a href="/music/jazz/milesdavis/1967MS/06GingerBreadBoy.mp3" download>
+            06 Ginger Bread Boy
+        </a><br>
+    </p3>
+
+    <hr>
+
+    <!-- Audio Players -->
+    <audio id="track1" controls>
+        <source src="/music/jazz/milesdavis/1967MS/01Orbits.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio><br>
+
+    <audio id="track2" controls>
+        <source src="/music/jazz/milesdavis/1967MS/02Circle.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio><br>
+
+    <audio id="track3" controls>
+        <source src="/music/jazz/milesdavis/1967MS/03Footprints.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio><br>
+
+    <audio id="track4" controls>
+        <source src="/music/jazz/milesdavis/1967MS/04Dolores.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio><br>
+
+    <audio id="track5" controls>
+        <source src="/music/jazz/milesdavis/1967MS/05FreedomJazzDance.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio><br>
+
+    <audio id="track6" controls>
+        <source src="/music/jazz/milesdavis/1967MS/06GingerBreadBoy.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio><br>
+
+    <hr>
+
+    <h3>personnel:</h3>
+    <p3>
+        Miles Davis - trumpet<br>
+        Wayne Shorter - saxophone<br>
+        Herbie Hancock - piano<br>
+        Ron Carter - bass<br>
+        Tony Williams - drums<br>
+    </p3>
+
+    <hr>
+
+    <h3>info:</h3>
+    <p3>
+        recorded 24 and 25 October 1966 at CBS 30th Street Studio, Manhattan, New York City, New York, USA
+    </p3>
+
+    <hr>
+
+    <!-- JavaScript for Auto-Play -->
+    <script>
+        const track1 = document.getElementById('track1');
+        const track2 = document.getElementById('track2');
+        const track3 = document.getElementById('track3');
+        const track4 = document.getElementById('track4');
+        const track5 = document.getElementById('track5');
+        const track6 = document.getElementById('track6');
+
+        track1.addEventListener('ended', () => track2.play());
+        track2.addEventListener('ended', () => track3.play());
+        track3.addEventListener('ended', () => track4.play());
+        track4.addEventListener('ended', () => track5.play());
+        track5.addEventListener('ended', () => track6.play());
+    </script>
+</body>
+</html>
 
